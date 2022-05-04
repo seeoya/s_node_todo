@@ -23,9 +23,16 @@
         <a href="pet">pet</a>
         <a href="beauty">beauty</a>
         <a href="write">write</a>
-        <a href="list">list</a>
 
+        <div>
+            <h3>서버 할일</h3>
+            
+            <% data.forEach(data => { %>
+                <h4><%= data.title %></h4>
+                <p><%= data.date %></p>
+            <% }) %>
 
+        </div>
 
 
     </body>
